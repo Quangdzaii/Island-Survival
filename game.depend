@@ -1,0 +1,468 @@
+# depslib dependency file v1.0
+1743321606 source:d:\hoc code c++\game\main.cpp
+	"Game.hpp"
+
+1743333240 d:\hoc code c++\game\game.hpp
+	<SDL.h>
+	<iostream>
+
+1743267821 source:d:\hoc code c++\game\game.cpp
+	"Game.hpp"
+
+1744194910 source:d:\hoc code c++\dung si diet rong - game loop\game.cpp
+	"Game.hpp"
+	"TextureManager.hpp"
+	"Map.hpp"
+	"Components.hpp"
+	"Vector2D.hpp"
+	"Collision.hpp"
+
+1744090114 d:\hoc code c++\dung si diet rong - game loop\game.hpp
+	<SDL.h>
+	<SDL_image.h>
+	<iostream>
+	<vector>
+
+1744191534 source:d:\hoc code c++\dung si diet rong - game loop\main.cpp
+	"Game.hpp"
+
+1744190432 source:d:\hoc code c++\dung si diet rong - game loop\texturemanager.cpp
+	"TextureManager.hpp"
+
+1744021065 d:\hoc code c++\dung si diet rong - game loop\texturemanager.hpp
+	"Game.hpp"
+
+1743770114 d:\hoc code c++\dung si diet rong - game loop\gameobject.hpp
+	"Game.hpp"
+
+1743770114 source:d:\hoc code c++\dung si diet rong - game loop\gameobject.cpp
+	"GameObject.hpp"
+	"TextureManager.hpp"
+
+1744186454 d:\hoc code c++\dung si diet rong - game loop\map.hpp
+	<string>
+
+1744186977 source:d:\hoc code c++\dung si diet rong - game loop\map.cpp
+	"Map.hpp"
+	"Game.hpp"
+	<fstream>
+	"ECS.hpp"
+	"Components.hpp"
+
+1743944924 d:\hoc code c++\dung si diet rong - game loop\ecs.hpp
+	<iostream>
+	<vector>
+	<memory>
+	<algorithm>
+	<bitset>
+	<array>
+
+1744194000 d:\hoc code c++\dung si diet rong - game loop\components.hpp
+	"ECS.hpp"
+	"TransformComponent.hpp"
+	"SpriteComponent.hpp"
+	"KeyboardController.hpp"
+	"ColliderComponent.hpp"
+	"TileComponent.hpp"
+	"CharacterComponent.hpp"
+
+1744038536 d:\hoc code c++\dung si diet rong - game loop\transformcomponent.hpp
+	"Components.hpp"
+	"Vector2D.hpp"
+
+1744038668 d:\hoc code c++\dung si diet rong - game loop\spritecomponent.hpp
+	"Components.hpp"
+	<SDL.h>
+	"TextureManager.hpp"
+	"Animation.hpp"
+	<map>
+
+1743927432 d:\hoc code c++\dung si diet rong - game loop\vector2d.hpp
+	<iostream>
+
+1743927732 source:d:\hoc code c++\dung si diet rong - game loop\vector2d.cpp
+	"Vector2D.hpp"
+
+1744196082 d:\hoc code c++\dung si diet rong - game loop\keyboardcontroller.hpp
+	"Game.hpp"
+	"ECS.hpp"
+	"Components.hpp"
+	"CharacterComponent.hpp"
+
+1744035939 source:d:\hoc code c++\dung si diet rong - game loop\collision.cpp
+	"Collision.hpp"
+	"ColliderComponent.hpp"
+	<iostream>
+
+1743937434 d:\hoc code c++\dung si diet rong - game loop\collision.hpp
+	<SDL.h>
+
+1744113862 d:\hoc code c++\dung si diet rong - game loop\collidercomponent.hpp
+	<string>
+	<SDL.h>
+	"Components.hpp"
+	"TextureManager.hpp"
+
+1744190382 d:\hoc code c++\dung si diet rong - game loop\tilecomponent.hpp
+	"ECS.hpp"
+	<SDL.h>
+
+1743944957 source:d:\hoc code c++\dung si diet rong - game loop\ecs.cpp
+	"ECS.hpp"
+
+1744021065 d:\hoc code c++\dung si diet rong - game loop\animation.hpp
+
+1744035939 source:d:\hoc code c++\dung si diet rong - game loop - copy\collision.cpp
+	"Collision.hpp"
+	"ColliderComponent.hpp"
+	<iostream>
+
+1743937434 d:\hoc code c++\dung si diet rong - game loop - copy\collision.hpp
+	<SDL.h>
+
+1744113862 d:\hoc code c++\dung si diet rong - game loop - copy\collidercomponent.hpp
+	<string>
+	<SDL.h>
+	"Components.hpp"
+	"TextureManager.hpp"
+
+1744298106 d:\hoc code c++\dung si diet rong - game loop - copy\components.hpp
+	"ECS.hpp"
+	"TransformComponent.hpp"
+	"SpriteComponent.hpp"
+	"KeyboardController.hpp"
+	"ColliderComponent.hpp"
+	"TileComponent.hpp"
+	"CharacterComponent.hpp"
+	"SafeZoneComponent.hpp"
+
+1743944924 d:\hoc code c++\dung si diet rong - game loop - copy\ecs.hpp
+	<iostream>
+	<vector>
+	<memory>
+	<algorithm>
+	<bitset>
+	<array>
+
+1744038536 d:\hoc code c++\dung si diet rong - game loop - copy\transformcomponent.hpp
+	"Components.hpp"
+	"Vector2D.hpp"
+
+1743927432 d:\hoc code c++\dung si diet rong - game loop - copy\vector2d.hpp
+	<iostream>
+
+1744038668 d:\hoc code c++\dung si diet rong - game loop - copy\spritecomponent.hpp
+	"Components.hpp"
+	<SDL.h>
+	"TextureManager.hpp"
+	"Animation.hpp"
+	<map>
+
+1744021065 d:\hoc code c++\dung si diet rong - game loop - copy\texturemanager.hpp
+	"Game.hpp"
+
+1744298106 d:\hoc code c++\dung si diet rong - game loop - copy\game.hpp
+	<SDL.h>
+	<SDL_image.h>
+	<iostream>
+	<vector>
+
+1744021065 d:\hoc code c++\dung si diet rong - game loop - copy\animation.hpp
+
+1744196082 d:\hoc code c++\dung si diet rong - game loop - copy\keyboardcontroller.hpp
+	"Game.hpp"
+	"ECS.hpp"
+	"Components.hpp"
+	"CharacterComponent.hpp"
+
+1744190382 d:\hoc code c++\dung si diet rong - game loop - copy\tilecomponent.hpp
+	"ECS.hpp"
+	<SDL.h>
+
+1743944957 source:d:\hoc code c++\dung si diet rong - game loop - copy\ecs.cpp
+	"ECS.hpp"
+
+1744194910 source:d:\hoc code c++\dung si diet rong - game loop - copy\game.cpp
+	"Game.hpp"
+	"TextureManager.hpp"
+	"Map.hpp"
+	"Components.hpp"
+	"Vector2D.hpp"
+	"Collision.hpp"
+
+1744186454 d:\hoc code c++\dung si diet rong - game loop - copy\map.hpp
+	<string>
+
+1743770114 source:d:\hoc code c++\dung si diet rong - game loop - copy\gameobject.cpp
+	"GameObject.hpp"
+	"TextureManager.hpp"
+
+1743770114 d:\hoc code c++\dung si diet rong - game loop - copy\gameobject.hpp
+	"Game.hpp"
+
+1744191534 source:d:\hoc code c++\dung si diet rong - game loop - copy\main.cpp
+	"Game.hpp"
+
+1744186977 source:d:\hoc code c++\dung si diet rong - game loop - copy\map.cpp
+	"Map.hpp"
+	"Game.hpp"
+	<fstream>
+	"ECS.hpp"
+	"Components.hpp"
+
+1744190432 source:d:\hoc code c++\dung si diet rong - game loop - copy\texturemanager.cpp
+	"TextureManager.hpp"
+
+1743927732 source:d:\hoc code c++\dung si diet rong - game loop - copy\vector2d.cpp
+	"Vector2D.hpp"
+
+1744193682 source:d:\hoc code c++\dung si diet rong - game loop\character.cpp
+	"Character.hpp"
+
+1744193682 d:\hoc code c++\dung si diet rong - game loop\character.hpp
+	"Game.hpp"
+	<SDL.h>
+
+1744196264 d:\hoc code c++\dung si diet rong - game loop\charactercomponent.hpp
+	"ECS.hpp"
+	"TransformComponent.hpp"
+	<SDL.h>
+
+1744196264 d:\hoc code c++\dung si diet rong - game loop - copy\charactercomponent.hpp
+	"ECS.hpp"
+	"TransformComponent.hpp"
+	<SDL.h>
+
+1744298585 d:\hoc code c++\dung si diet rong - game loop - copy\safezonecomponent.hpp
+	"ECS.hpp"
+	<SDL.h>
+
+1744035939 source:d:\hoc code c++\2\collision.cpp
+	"Collision.hpp"
+	"ColliderComponent.hpp"
+	<iostream>
+
+1743937434 d:\hoc code c++\2\collision.hpp
+	<SDL.h>
+
+1744113862 d:\hoc code c++\2\collidercomponent.hpp
+	<string>
+	<SDL.h>
+	"Components.hpp"
+	"TextureManager.hpp"
+
+1744298106 d:\hoc code c++\2\components.hpp
+	"ECS.hpp"
+	"TransformComponent.hpp"
+	"SpriteComponent.hpp"
+	"KeyboardController.hpp"
+	"ColliderComponent.hpp"
+	"TileComponent.hpp"
+	"CharacterComponent.hpp"
+	"SafeZoneComponent.hpp"
+
+1743944924 d:\hoc code c++\2\ecs.hpp
+	<iostream>
+	<vector>
+	<memory>
+	<algorithm>
+	<bitset>
+	<array>
+
+1744038536 d:\hoc code c++\2\transformcomponent.hpp
+	"Components.hpp"
+	"Vector2D.hpp"
+
+1743927432 d:\hoc code c++\2\vector2d.hpp
+	<iostream>
+
+1744038668 d:\hoc code c++\2\spritecomponent.hpp
+	"Components.hpp"
+	<SDL.h>
+	"TextureManager.hpp"
+	"Animation.hpp"
+	<map>
+
+1744021065 d:\hoc code c++\2\texturemanager.hpp
+	"Game.hpp"
+
+1744307974 d:\hoc code c++\2\game.hpp
+	<SDL.h>
+	<SDL_image.h>
+	<SDL_mixer.h>
+	<iostream>
+	<vector>
+
+1744021065 d:\hoc code c++\2\animation.hpp
+
+1744196082 d:\hoc code c++\2\keyboardcontroller.hpp
+	"Game.hpp"
+	"ECS.hpp"
+	"Components.hpp"
+	"CharacterComponent.hpp"
+
+1744299641 d:\hoc code c++\2\charactercomponent.hpp
+	"ECS.hpp"
+	"TransformComponent.hpp"
+	<SDL.h>
+
+1744190382 d:\hoc code c++\2\tilecomponent.hpp
+	"ECS.hpp"
+	<SDL.h>
+
+1744309112 d:\hoc code c++\2\safezonecomponent.hpp
+	"ECS.hpp"
+	<SDL.h>
+
+1743944957 source:d:\hoc code c++\2\ecs.cpp
+	"ECS.hpp"
+
+1743770114 source:d:\hoc code c++\2\gameobject.cpp
+	"GameObject.hpp"
+	"TextureManager.hpp"
+
+1743770114 d:\hoc code c++\2\gameobject.hpp
+	"Game.hpp"
+
+1744191534 source:d:\hoc code c++\2\main.cpp
+	"Game.hpp"
+
+1744186977 source:d:\hoc code c++\2\map.cpp
+	"Map.hpp"
+	"Game.hpp"
+	<fstream>
+	"ECS.hpp"
+	"Components.hpp"
+
+1744186454 d:\hoc code c++\2\map.hpp
+	<string>
+
+1744190432 source:d:\hoc code c++\2\texturemanager.cpp
+	"TextureManager.hpp"
+
+1743927732 source:d:\hoc code c++\2\vector2d.cpp
+	"Vector2D.hpp"
+
+1744308392 source:d:\hoc code c++\2\game.cpp
+	"Game.hpp"
+	"TextureManager.hpp"
+	"Map.hpp"
+	"Components.hpp"
+	"Vector2D.hpp"
+	"Collision.hpp"
+
+1744035939 source:d:\hoc code c++\island survival\collision.cpp
+	"Collision.hpp"
+	"ColliderComponent.hpp"
+	<iostream>
+
+1743937434 d:\hoc code c++\island survival\collision.hpp
+	<SDL.h>
+
+1744113862 d:\hoc code c++\island survival\collidercomponent.hpp
+	<string>
+	<SDL.h>
+	"Components.hpp"
+	"TextureManager.hpp"
+
+1744298106 d:\hoc code c++\island survival\components.hpp
+	"ECS.hpp"
+	"TransformComponent.hpp"
+	"SpriteComponent.hpp"
+	"KeyboardController.hpp"
+	"ColliderComponent.hpp"
+	"TileComponent.hpp"
+	"CharacterComponent.hpp"
+	"SafeZoneComponent.hpp"
+
+1743944924 d:\hoc code c++\island survival\ecs.hpp
+	<iostream>
+	<vector>
+	<memory>
+	<algorithm>
+	<bitset>
+	<array>
+
+1744038536 d:\hoc code c++\island survival\transformcomponent.hpp
+	"Components.hpp"
+	"Vector2D.hpp"
+
+1743927432 d:\hoc code c++\island survival\vector2d.hpp
+	<iostream>
+
+1744038668 d:\hoc code c++\island survival\spritecomponent.hpp
+	"Components.hpp"
+	<SDL.h>
+	"TextureManager.hpp"
+	"Animation.hpp"
+	<map>
+
+1744021065 d:\hoc code c++\island survival\texturemanager.hpp
+	"Game.hpp"
+
+1744461688 d:\hoc code c++\island survival\game.hpp
+	<SDL.h>
+	<SDL_image.h>
+	<SDL_mixer.h>
+	<SDL_ttf.h>
+	<iostream>
+	<vector>
+
+1744021065 d:\hoc code c++\island survival\animation.hpp
+
+1744555698 d:\hoc code c++\island survival\keyboardcontroller.hpp
+	"Game.hpp"
+	"ECS.hpp"
+	"Components.hpp"
+	"CharacterComponent.hpp"
+
+1744594610 d:\hoc code c++\island survival\charactercomponent.hpp
+	"ECS.hpp"
+	"TransformComponent.hpp"
+	<SDL.h>
+
+1744190382 d:\hoc code c++\island survival\tilecomponent.hpp
+	"ECS.hpp"
+	<SDL.h>
+
+1744471553 d:\hoc code c++\island survival\safezonecomponent.hpp
+	"ECS.hpp"
+	<SDL.h>
+
+1743944957 source:d:\hoc code c++\island survival\ecs.cpp
+	"ECS.hpp"
+
+1744594975 source:d:\hoc code c++\island survival\game.cpp
+	"Game.hpp"
+	"TextureManager.hpp"
+	"Map.hpp"
+	"Components.hpp"
+	"Vector2D.hpp"
+	"Collision.hpp"
+
+1744186454 d:\hoc code c++\island survival\map.hpp
+	<string>
+
+1743770114 source:d:\hoc code c++\island survival\gameobject.cpp
+	"GameObject.hpp"
+	"TextureManager.hpp"
+
+1743770114 d:\hoc code c++\island survival\gameobject.hpp
+	"Game.hpp"
+
+1744590508 source:d:\hoc code c++\island survival\main.cpp
+	"Game.hpp"
+
+1744186977 source:d:\hoc code c++\island survival\map.cpp
+	"Map.hpp"
+	"Game.hpp"
+	<fstream>
+	"ECS.hpp"
+	"Components.hpp"
+
+1744190432 source:d:\hoc code c++\island survival\texturemanager.cpp
+	"TextureManager.hpp"
+
+1743927732 source:d:\hoc code c++\island survival\vector2d.cpp
+	"Vector2D.hpp"
+
