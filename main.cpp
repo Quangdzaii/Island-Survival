@@ -10,7 +10,7 @@ int main(int argc, char *argv[]) {
     int frameTime;
 
     game = new Game();
-    game -> init("Island Survival", SDL_WINDOWPOS_CENTERED, SDL_WINDOWPOS_CENTERED, 800, 640, true);
+    game -> init("Island Survival", SDL_WINDOWPOS_CENTERED, SDL_WINDOWPOS_CENTERED, 1000, 720, false);
 
     while (game -> running()) {
         frameStart = SDL_GetTicks();
