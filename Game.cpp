@@ -154,6 +154,10 @@ void Game::restartGame() {
     zone.addComponent<SafeZoneComponent>(initialX, initialY, 100, 100, 15000, currentZoneId++);
     zone.addGroup(groupSafeZones);
 
+    Mix_PlayMusic(backgroundMusic, -1);
+
+    Game::score = 0;
+
     // Đặt lại các biến thời gian
     lastSafeZoneTime = SDL_GetTicks();
     lastDamageTime = SDL_GetTicks();
@@ -279,6 +283,7 @@ else {
 }
 
 if(character.getComponent<CharacterComponent>().currentHP <= 0) {
+    Mix_HaltMusic();
     const SDL_MessageBoxButtonData buttons[] = {
         { SDL_MESSAGEBOX_BUTTON_RETURNKEY_DEFAULT, 1, "Play agian" },
         { SDL_MESSAGEBOX_BUTTON_ESCAPEKEY_DEFAULT, 0, "Exit" },
