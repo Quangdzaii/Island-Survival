@@ -24,7 +24,7 @@ inline ComponentID getNewComponentTypeID() {
 
 // Gán id cho mỗi kiểu dữ liệu cụ thể, template viết một hàm hoặc lớp chung cho nhiều kiểu dữ liệu khác nhau
 template <typename T> inline ComponentID getComponentTypeID() noexcept {
-    static_assert(is_base_of<Component, T>::value, ""); // Lệnh kiểm tra tại thời điểm biên dịch
+    static_assert(is_base_of<Component, T>::value, "T must be inherit from Component"); // Lệnh kiểm tra tại thời điểm biên dịch
     static ComponentID typeID = getNewComponentTypeID();
     return typeID;
 }
