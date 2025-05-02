@@ -9,8 +9,6 @@
 
 using namespace std;
 
-
-
 class Game {
 // Phần có thể truy cập từ bên ngoài
 public:
