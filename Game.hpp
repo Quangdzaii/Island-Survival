@@ -9,7 +9,7 @@
 
 using namespace std;
 
-class ColliderComponent;
+
 
 class Game {
 // Phần có thể truy cập từ bên ngoài
