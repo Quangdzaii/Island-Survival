@@ -48,7 +48,6 @@ public:
 
 // Phần chỉ có thể truy cập trong class;
 private:
-    int count = 0; // Bộ đếm hỗ trợ cho hàm update
     SDL_Window *window;
 };
 
