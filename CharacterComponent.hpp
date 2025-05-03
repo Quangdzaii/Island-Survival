@@ -26,11 +26,11 @@ public:
 
         float hpPercent = static_cast<float>(currentHP) / maxHP;
 
-        SDL_Rect bg = {barX, barY, barWidth, barHeight};
-        SDL_Rect hp = {barX, barY, static_cast<int>(barWidth * hpPercent), barHeight};
+        SDL_Rect bg = {barX, barY, barWidth, barHeight};//Nền
+        SDL_Rect hp = {barX, barY, static_cast<int>(barWidth * hpPercent), barHeight};//Máu
 
-        SDL_SetRenderDrawColor(renderer, 50, 50, 50, 255);
-        SDL_RenderFillRect(renderer, &bg);
+        SDL_SetRenderDrawColor(renderer, 50, 50, 50, 255); //Màu xám tối
+        SDL_RenderFillRect(renderer, &bg);//Vẽ nền máu
 
         // Chọn màu thanh máu theo %HP
         if (hpPercent > 0.5f) {
