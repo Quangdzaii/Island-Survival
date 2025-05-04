@@ -2,7 +2,6 @@
 #include "Game.hpp"
 #include "ECS.hpp"
 #include "Components.hpp"
-#include "CharacterComponent.hpp"
 
 class KeyboardController : public Component {
 public:

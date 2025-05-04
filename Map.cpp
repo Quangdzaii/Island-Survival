@@ -29,7 +29,7 @@ void Map::LoadMap(string path, int sizeX,int sizeY) {
             srcY = atoi(&c) * tileSize; // atoi: chuyển kí tự số ('1') thành số nguyên (1)
             mapFile.get(c);
             srcX = atoi(&c) * tileSize;
-            AddTile(srcX, srcY, static_cast<int>(x * scaledSize), static_cast<int>(y * scaledSize));
+            AddTile(srcX, srcY, x * scaledSize, y * scaledSize);
             mapFile.ignore();
         }
     }
@@ -41,7 +41,7 @@ void Map::LoadMap(string path, int sizeX,int sizeY) {
             mapFile.get(c);
             if(c == '1') {
                 auto& tcol(manager.addEntity());
-                tcol.addComponent<ColliderComponent>("terrain", static_cast<int>(x * scaledSize), static_cast<int>(y * scaledSize), static_cast<int>(scaledSize));
+                tcol.addComponent<ColliderComponent>("terrain", x * scaledSize, y * scaledSize, scaledSize);
                 tcol.addGroup(Game::groupColliders);
             }
             mapFile.ignore();
@@ -53,6 +53,6 @@ void Map::LoadMap(string path, int sizeX,int sizeY) {
 
 void Map::AddTile(int srcX, int srcY, int xpos, int ypos) {
     auto& tile(manager.addEntity());
-    tile.addComponent<TileComponent>(srcX, srcY, static_cast<int>(xpos), static_cast<int>(ypos), tileSize, mapScale, mapFilePath);
+    tile.addComponent<TileComponent>(srcX, srcY, xpos, ypos, tileSize, mapScale, mapFilePath);
     tile.addGroup(Game::groupMap);
 }

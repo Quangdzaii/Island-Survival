@@ -3,7 +3,7 @@
 #include <SDL.h>
 #include "TextureManager.hpp"
 #include "Animation.hpp"
-#include <map>
+#include <map>//Duyệt mảng qua key(ko cân là số nguyên)
 
 using namespace std;
 
@@ -57,8 +57,8 @@ public:
 
         srcRect.y = animIndex * transform -> height;
 
-        destRect.x = static_cast<int>(transform -> position.x) - Game::camera.x;
-        destRect.y = static_cast<int>(transform -> position.y) - Game::camera.y;
+        destRect.x = transform -> position.x - Game::camera.x;
+        destRect.y = transform -> position.y - Game::camera.y;
         destRect.w = transform -> width * transform -> scale;
         destRect.h = transform -> height * transform -> scale;
     }

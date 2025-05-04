@@ -466,16 +466,16 @@
 1743927732 source:d:\hoc code c++\island survival\vector2d.cpp
 	"Vector2D.hpp"
 
-1746345598 source:d:\hoc code c++\island survival\island-survival\collision.cpp
+1746357328 source:d:\hoc code c++\island survival\island-survival\collision.cpp
 	"Collision.hpp"
 	"ColliderComponent.hpp"
 	<iostream>
 
-1746275583 d:\hoc code c++\island survival\island-survival\collision.hpp
+1746356940 d:\hoc code c++\island survival\island-survival\collision.hpp
 	<SDL.h>
 	"ColliderComponent.hpp"
 
-1746344778 d:\hoc code c++\island survival\island-survival\collidercomponent.hpp
+1746357124 d:\hoc code c++\island survival\island-survival\collidercomponent.hpp
 	<string>
 	<SDL.h>
 	"Components.hpp"
@@ -499,14 +499,14 @@
 	<bitset>
 	<array>
 
-1746276154 d:\hoc code c++\island survival\island-survival\transformcomponent.hpp
+1746358100 d:\hoc code c++\island survival\island-survival\transformcomponent.hpp
 	"Components.hpp"
 	"Vector2D.hpp"
 
-1746269245 d:\hoc code c++\island survival\island-survival\vector2d.hpp
+1746358444 d:\hoc code c++\island survival\island-survival\vector2d.hpp
 	<iostream>
 
-1744038668 d:\hoc code c++\island survival\island-survival\spritecomponent.hpp
+1746350823 d:\hoc code c++\island survival\island-survival\spritecomponent.hpp
 	"Components.hpp"
 	<SDL.h>
 	"TextureManager.hpp"
@@ -526,29 +526,28 @@
 
 1744021065 d:\hoc code c++\island survival\island-survival\animation.hpp
 
-1744555698 d:\hoc code c++\island survival\island-survival\keyboardcontroller.hpp
+1746355405 d:\hoc code c++\island survival\island-survival\keyboardcontroller.hpp
 	"Game.hpp"
 	"ECS.hpp"
 	"Components.hpp"
-	"CharacterComponent.hpp"
 
 1746343890 d:\hoc code c++\island survival\island-survival\charactercomponent.hpp
 	"ECS.hpp"
 	"TransformComponent.hpp"
 	<SDL.h>
 
-1746348121 d:\hoc code c++\island survival\island-survival\tilecomponent.hpp
+1746358548 d:\hoc code c++\island survival\island-survival\tilecomponent.hpp
 	"ECS.hpp"
 	<SDL.h>
 
-1746346448 d:\hoc code c++\island survival\island-survival\safezonecomponent.hpp
+1746357472 d:\hoc code c++\island survival\island-survival\safezonecomponent.hpp
 	"ECS.hpp"
 	<SDL.h>
 
 1746294434 source:d:\hoc code c++\island survival\island-survival\ecs.cpp
 	"ECS.hpp"
 
-1746346449 source:d:\hoc code c++\island survival\island-survival\game.cpp
+1746356060 source:d:\hoc code c++\island survival\island-survival\game.cpp
 	"Game.hpp"
 	"TextureManager.hpp"
 	"Map.hpp"
@@ -569,7 +568,7 @@
 1746346305 source:d:\hoc code c++\island survival\island-survival\main.cpp
 	"Game.hpp"
 
-1744186977 source:d:\hoc code c++\island survival\island-survival\map.cpp
+1746355139 source:d:\hoc code c++\island survival\island-survival\map.cpp
 	"Map.hpp"
 	"Game.hpp"
 	<fstream>
@@ -579,7 +578,7 @@
 1746271119 source:d:\hoc code c++\island survival\island-survival\texturemanager.cpp
 	"TextureManager.hpp"
 
-1746269223 source:d:\hoc code c++\island survival\island-survival\vector2d.cpp
+1746358444 source:d:\hoc code c++\island survival\island-survival\vector2d.cpp
 	"Vector2D.hpp"
 
 1744035939 source:d:\hoc code c++\island survival - copy\island-survival\collision.cpp

@@ -11,6 +11,7 @@ public:
     int zoneId;
     bool scored = false;
 
+
     SafeZoneComponent(int x, int y, int w, int h, size_t durationMs, int id)
                       : duration(durationMs), zoneId(id){
         area = {x, y, w, h};
@@ -27,7 +28,7 @@ public:
         size_t remaining = (duration > elapsed) ? (duration - elapsed) : 0;
 
         // Nhấp nháy nếu gần hết thời gian
-        if (remaining < 1000) {
+        if (remaining < 2000) {
             return ((currentTime / 200) % 2 == 0);
         }
         return true;
