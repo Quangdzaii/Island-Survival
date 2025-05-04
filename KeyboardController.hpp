@@ -33,6 +33,9 @@ public:
                  transform -> velocity.x = 1;
                  sprite -> Play("Walk");
                  break;
+            case SDLK_ESCAPE:
+                 Game::isRunning = false;
+                 break;
             }
         }
         if(Game::event.type == SDL_KEYUP) {
@@ -53,9 +56,6 @@ public:
             case SDLK_d:
                  transform -> velocity.x = 0;
                  sprite -> Play("Idle");
-                 break;
-            case SDLK_ESCAPE:
-                 Game::isRunning = false;
                  break;
             }
         }

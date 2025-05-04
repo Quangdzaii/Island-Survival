@@ -47,10 +47,8 @@ auto& tiles(manager.getGroup(Game::groupMap));
 auto& characters(manager.getGroup(Game::groupCharacters));
 auto& colliders(manager.getGroup(Game::groupColliders));
 
-Game::Game()
-{}
-Game::~Game()
-{}
+Game::Game() {}
+Game::~Game() {}
 
 void Game::init(const char* title, int xpos, int ypos, int width, int height, bool fullscreen) {
      int flags = 0; // Cửa sổ ban đầu bình thường
@@ -79,9 +77,6 @@ void Game::init(const char* title, int xpos, int ypos, int width, int height, bo
 
     isRunning = true;
 }
-
-SDL_SetHint(SDL_HINT_RENDER_SCALE_QUALITY, "0"); // Ngăn filter mờ
-
 
 gameMap = new Map("terrain_ss.png", 2.3, 32);
 
@@ -332,6 +327,7 @@ void Game::render() {
    for(auto& c : characters) {
       c -> draw();
    }
+
 
    character.getComponent<CharacterComponent>().drawHealthBar(renderer, camera);
 
