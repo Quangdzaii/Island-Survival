@@ -208,10 +208,9 @@ void Game::update() {
 if(currentTime - lastSafeZoneTime >= safeZoneInterval) {
     lastSafeZoneTime = currentTime;
 
-    bool placed = false;
-    int attempts = 0;
+    bool placed = false;//Chưa tạo vùng an toàn
 
-    while(!placed && attempts < 20) {  // thử tối đa 20 lần
+    while(!placed) {
         int randX = rand() % (25 * 32 * 2 - 100); // map width
         int randY = rand() % (20 * 32 * 2 - 100); // map height
 
@@ -221,7 +220,6 @@ if(currentTime - lastSafeZoneTime >= safeZoneInterval) {
           zone.addGroup(groupSafeZones);
           placed = true;
         }
-        attempts++;
     }
 }
 
