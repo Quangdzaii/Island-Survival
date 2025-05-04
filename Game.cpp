@@ -325,7 +325,7 @@ void Game::render() {
 
    drawScore(renderer, score);
 
-   SDL_RenderPresent(renderer);
+   SDL_RenderPresent(renderer);//Hiển thị tất cả lên màn hình
 }
 
 void Game::clean() {
