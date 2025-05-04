@@ -334,19 +334,16 @@ void Game::clean() {
    SDL_Quit();
 
    if(tickSound) {
-     Mix_FreeChunk(tickSound);
-     tickSound = nullptr;
+     Mix_FreeChunk(tickSound);//Giải phóng
    }
 
    if(backgroundMusic) {
-     Mix_FreeMusic(backgroundMusic);
-     backgroundMusic = nullptr;
+     Mix_FreeMusic(backgroundMusic);//Giải phóng
    }
    Mix_CloseAudio();
    Mix_Quit();
    if(font) {
     TTF_CloseFont(font);
-    font = nullptr;
    }
    TTF_Quit();
 }
