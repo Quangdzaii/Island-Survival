@@ -17,9 +17,6 @@ public:
     TileComponent(int srcX, int srcY, int xpos, int ypos, int tsize, float tscale, const char* path) {
        texture = TextureManager::LoadTexture(path);
 
-        // Tắt scale mờ
-        SDL_SetTextureScaleMode(texture, SDL_ScaleModeNearest);
-
        position.x = static_cast<int>(xpos);
        position.y = static_cast<int>(ypos);
 

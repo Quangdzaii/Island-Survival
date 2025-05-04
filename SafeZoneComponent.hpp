@@ -5,26 +5,26 @@
 class SafeZoneComponent : public Component {
 public:
     SDL_Rect area;
-    Uint32 createdTime;
-    Uint32 duration;
+    size_t createdTime;
+    size_t duration;
     SDL_Color color;
     int zoneId;
     bool scored = false;
 
-    SafeZoneComponent(int x, int y, int w, int h, Uint32 durationMs, int id)
+    SafeZoneComponent(int x, int y, int w, int h, size_t durationMs, int id)
                       : duration(durationMs), zoneId(id){
         area = {x, y, w, h};
         createdTime = SDL_GetTicks();
         color = {255, 255, 255, 255};
     }
 
-    bool isExpired(Uint32 currentTime) const {
+    bool isExpired(size_t currentTime) const {
         return (currentTime - createdTime) >= duration;
     }
 
-    bool shouldRender(Uint32 currentTime) const {
-        Uint32 elapsed = currentTime - createdTime;
-        Uint32 remaining = (duration > elapsed) ? (duration - elapsed) : 0;
+    bool shouldRender(size_t currentTime) const {
+        size_t elapsed = currentTime - createdTime;
+        size_t remaining = (duration > elapsed) ? (duration - elapsed) : 0;
 
         // Nhấp nháy nếu gần hết thời gian
         if (remaining < 1000) {
@@ -33,7 +33,7 @@ public:
         return true;
     }
 
-    void render(SDL_Renderer* renderer, Uint32 currentTime, SDL_Rect& camera) {
+    void render(SDL_Renderer* renderer, size_t currentTime, SDL_Rect& camera) {
         if (!shouldRender(currentTime)) return;
 
         SDL_Rect screenRect = {

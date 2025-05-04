@@ -11,6 +11,9 @@ public:
     CharacterComponent() : maxHP(100), currentHP(100) {}
 
     void init() override {
+        if(!entity -> hasComponent<TransformComponent>()) {
+            entity -> addComponent<TransformComponent>();
+        }
         transform = &entity -> getComponent<TransformComponent>();
     }
 

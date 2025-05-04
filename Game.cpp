@@ -34,12 +34,12 @@ static bool wasInSafeZone = false;
 int currentZoneId = 0; // Tăng dần cho mỗi vùng SafeZone tạo ra
 
 bool damageCountdownStarted = false;
-Uint32 lastSafeZoneTime = 0;
-Uint32 damageStartTime = 0;
-Uint32 lastDamageTime = 0; // Thời điểm lần trừ máu gần nhất
-Uint32 damageInterval = 1000; // Trừ máu mỗi 1 giây
-Uint32 safeZoneInterval = 15000; // Mỗi 15 giây tạo vùng an toàn
-Uint32 lastHealTime = 0;
+size_t lastSafeZoneTime = 0;
+size_t damageStartTime = 0;
+size_t lastDamageTime = 0; // Thời điểm lần trừ máu gần nhất
+size_t damageInterval = 1000; // Trừ máu mỗi 1 giây
+size_t safeZoneInterval = 15000; // Mỗi 15 giây tạo vùng an toàn
+size_t lastHealTime = 0;
 
 auto& character(manager.addEntity());
 
@@ -207,7 +207,7 @@ void Game::update() {
     camera.y = camera.h;
    }
 
-   Uint32 currentTime = SDL_GetTicks();
+   size_t currentTime = SDL_GetTicks();
 
 // Tạo safezone mới mỗi vài giây
 if(currentTime - lastSafeZoneTime >= safeZoneInterval) {
