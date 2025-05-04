@@ -29,7 +29,7 @@ template <typename T> inline ComponentID getComponentTypeID() {
     return typeID;
 }
 
-constexpr size_t maxComponents = 32; // constexpr để khai báo hằng số tại thời điểm biên dịch
+constexpr size_t maxComponents = 32; // constexpr để khai báo hằng số tại thời điểm biên dịch(lúc build)
 constexpr size_t maxGroups = 32;
 
 using ComponentBitset = bitset<maxComponents>; // Một dãy bit để kiểm tra xem entity nào có những component nào tồn tại
@@ -117,7 +117,7 @@ public:
 
     //Loại bỏ các entity không còn hoạt động hoặc không thuộc group đang xét
     void refresh() {
-        for(auto i(0u); i < maxGroups; i++) { // 0u là unsigned int 0, để tránh warning khi so sánh với size_t
+        for(auto i = 0u; i < maxGroups; i++) { // 0u là unsigned int 0, để tránh warning khi so sánh với size_t
             auto& v(groupedEntities[i]); // Truy xuất tham chiếu đến vector của nhóm thứ i
             v.erase(
                     remove_if(begin(v), end(v), // remove_if(...): đưa các phần tử cần xóa về cuối vector
