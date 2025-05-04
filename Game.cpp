@@ -258,7 +258,7 @@ for(auto& zone : safeZones) {
 
 if(!inSafeZone) {
     if(currentTime - lastDamageTime >= damageInterval) {
-        character.getComponent<CharacterComponent>().currentHP -= 100;
+        character.getComponent<CharacterComponent>().currentHP -= 3;
         lastDamageTime = currentTime;
     }
     lastZonePtr = nullptr; // reset để lần sau vào lại sẽ tính điểm
@@ -287,8 +287,8 @@ if(character.getComponent<CharacterComponent>().currentHP <= 0) {
         window,
         "Game Over",
         "You Lost",
-        SDL_arraysize(buttons),
-        buttons,
+        SDL_arraysize(buttons),//Số lượng nút
+        buttons,//Mảng các nút
     };
 
     int buttonid;
@@ -323,7 +323,7 @@ void Game::render() {
       zone -> getComponent<SafeZoneComponent>().render(renderer, SDL_GetTicks(), camera);
    }
 
-   drawScore(renderer, Game::score);
+   drawScore(renderer, score);
 
    SDL_RenderPresent(renderer);
 }
