@@ -17,21 +17,19 @@ public:
     TileComponent(int srcX, int srcY, int xpos, int ypos, int tsize, float tscale, const char* path) {
        texture = TextureManager::LoadTexture(path);
 
-       position.x = static_cast<int>(xpos);
-       position.y = static_cast<int>(ypos);
+       position.x = xpos;
+       position.y = ypos;
 
        srcRect.x = srcX;
        srcRect.y = srcY;
        srcRect.w = srcRect.h = tsize;
 
-       position.x = static_cast<int>(xpos);
-       position.y = static_cast<int>(ypos);
        destRect.w = destRect.h = static_cast<int>(tsize * tscale) + 1;
     }
 
     void update() override {
-       destRect.x = static_cast<int>(position.x - Game::camera.x);
-       destRect.y = static_cast<int>(position.y - Game::camera.y);
+       destRect.x = position.x - Game::camera.x;
+       destRect.y = position.y - Game::camera.y;
     }
 
     void draw() override {
