@@ -248,7 +248,7 @@ for(auto& zone : safeZones) {
 
         auto& comp = zone->getComponent<SafeZoneComponent>();
          if(!comp.scored) {
-            Game::score += 1; // Cộng điểm 1 lần duy nhất
+            score += 1; // Cộng điểm 1 lần duy nhất
             Mix_PlayChannel(-1, tickSound, 0);
             comp.scored = true; // Đánh dấu đã cộng
         }
@@ -258,7 +258,7 @@ for(auto& zone : safeZones) {
 
 if(!inSafeZone) {
     if(currentTime - lastDamageTime >= damageInterval) {
-        character.getComponent<CharacterComponent>().currentHP -= 3;
+        character.getComponent<CharacterComponent>().currentHP -= 100;
         lastDamageTime = currentTime;
     }
     lastZonePtr = nullptr; // reset để lần sau vào lại sẽ tính điểm
@@ -276,21 +276,13 @@ else {
 }
 
 if(character.getComponent<CharacterComponent>().currentHP <= 0) {
-    Mix_HaltMusic();
+    Mix_HaltMusic();//Dừng nhạc
     const SDL_MessageBoxButtonData buttons[] = {
         { SDL_MESSAGEBOX_BUTTON_RETURNKEY_DEFAULT, 1, "Play agian" },
         { SDL_MESSAGEBOX_BUTTON_ESCAPEKEY_DEFAULT, 0, "Exit" },
     };
 
-    const SDL_MessageBoxColorScheme colorScheme = {
-        {
-            { 255,   0,   0 }, // SDL_MESSAGEBOX_COLOR_BACKGROUND
-            { 255, 255, 255 }, // SDL_MESSAGEBOX_COLOR_TEXT
-            {   0,   0,   0 }, // SDL_MESSAGEBOX_COLOR_BUTTON_BORDER
-            { 255,   0,   0 }, // SDL_MESSAGEBOX_COLOR_BUTTON_BACKGROUND
-            { 255, 255, 255 }  // SDL_MESSAGEBOX_COLOR_BUTTON_SELECTED
-        }
-    };
+
 
     const SDL_MessageBoxData messageboxdata = {
         SDL_MESSAGEBOX_INFORMATION,
@@ -299,7 +291,6 @@ if(character.getComponent<CharacterComponent>().currentHP <= 0) {
         "You Lost",
         SDL_arraysize(buttons),
         buttons,
-        &colorScheme
     };
 
     int buttonid;
