@@ -127,8 +127,8 @@ void Game::restartGame() {
     character.getComponent<CharacterComponent>().currentHP = 100;
 
     // Reset camera theo vị trí mới
-    camera.x = character.getComponent<TransformComponent>().position.x - 400;
-    camera.y = character.getComponent<TransformComponent>().position.y - 320;
+    camera.x = character.getComponent<TransformComponent>().position.x - camera.w / 2;
+    camera.y = character.getComponent<TransformComponent>().position.y - camera.h / 2;
 
     if(camera.x < 0) {camera.x = 0;}
     if(camera.y < 0) {camera.y = 0;}
@@ -160,7 +160,7 @@ void Game::restartGame() {
 
 void drawScore(SDL_Renderer* renderer, int score) {
     SDL_Color white = {255, 255, 255};
-    string text = "Score: " + to_string(Game::score);
+    string text = "Score: " + to_string(score);
 
     SDL_Surface* surfaceMessage = TTF_RenderText_Solid(Game::font, text.c_str(), white);
     SDL_Texture* message = SDL_CreateTextureFromSurface(renderer, surfaceMessage);
@@ -186,8 +186,8 @@ void Game::update() {
     }
    }
 
-   camera.x = character.getComponent<TransformComponent>().position.x - 400;
-   camera.y = character.getComponent<TransformComponent>().position.y - 320;
+   camera.x = character.getComponent<TransformComponent>().position.x - camera.w / 2;
+   camera.y = character.getComponent<TransformComponent>().position.y - camera.h / 2;
 
    if(camera.x < 0) {
     camera.x = 0;
