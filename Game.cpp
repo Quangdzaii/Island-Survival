@@ -282,11 +282,9 @@ if(character.getComponent<CharacterComponent>().currentHP <= 0) {
         { SDL_MESSAGEBOX_BUTTON_ESCAPEKEY_DEFAULT, 0, "Exit" },
     };
 
-
-
     const SDL_MessageBoxData messageboxdata = {
         SDL_MESSAGEBOX_INFORMATION,
-        NULL,
+        window,
         "Game Over",
         "You Lost",
         SDL_arraysize(buttons),
