@@ -23,7 +23,7 @@ TTF_Font* Game::font = nullptr;
 SDL_Renderer* Game::renderer = nullptr;
 SDL_Event Game::event; // Biến lưu trữ tác động
 
-SDL_Rect Game::camera = {0, 0, 1000, 720};
+SDL_Rect Game::camera = {0, 0, 800, 640};
 
 bool inSafeZone = false;
 
@@ -265,7 +265,7 @@ for(auto& zone : safeZones) {
 
 if(!inSafeZone) {
     if(currentTime - lastDamageTime >= damageInterval) {
-        character.getComponent<CharacterComponent>().currentHP -= 2;
+        character.getComponent<CharacterComponent>().currentHP -= 3;
         lastDamageTime = currentTime;
     }
     lastZonePtr = nullptr; // reset để lần sau vào lại sẽ tính điểm
